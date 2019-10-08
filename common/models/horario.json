@@ -1,0 +1,36 @@
+{
+  "name": "horario",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "forceId": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_horario": {
+      "type": "number",
+      "id": true,
+      "generated": true,
+      "required": true
+    },
+    "horaInicio": {
+      "type": "string",
+      "required": true
+    },
+    "horaFin": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "materias": {
+      "type": "hasMany",
+      "model": "materias",
+      "foreignKey": "",
+      "through": "docente"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

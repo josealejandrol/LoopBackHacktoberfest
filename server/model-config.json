@@ -38,5 +38,17 @@
   "estudiantes": {
     "dataSource": "db",
     "public": true
+  },
+  "materias": {
+    "dataSource": "db",
+    "public": true
+  },
+  "horario": {
+    "dataSource": "db",
+    "public": true
+  },
+  "docente": {
+    "dataSource": "db",
+    "public": true
   }
 }

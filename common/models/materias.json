@@ -1,0 +1,31 @@
+{
+  "name": "materias",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_materias": {
+      "type": "number",
+      "id": true,
+      "generated": true,
+      "required": true
+    },
+    "materia": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "horarios": {
+      "type": "hasMany",
+      "model": "horario",
+      "foreignKey": "",
+      "through": "docente"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
